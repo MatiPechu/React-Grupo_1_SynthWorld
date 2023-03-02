@@ -9,15 +9,9 @@ function Estructura(){
 <Navbar/>
 <Banner1/>
 <div className="total-panels">
-    <div>
     <ContentTotally/>
-    </div>
-    <div>
     <ContentTotally/>
-    </div>
-    <div>
     <ContentTotally/>
-    </div>
 </div>
 <Banner2/>
 </>

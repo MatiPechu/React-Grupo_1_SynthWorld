@@ -5,7 +5,7 @@ function Navbar(){
 <>
 <div className="navbar-main">
     <div>
-        <img className="logo" style={{width: 6 +'rem'}} src={logo} alt="Logo navar"/>
+        <img className="logo" style={{width: '6rem'}} src={logo} alt="Logo navar"/>
     </div>
     <h2>SynthWorld</h2>
 </div>
