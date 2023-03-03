@@ -7,13 +7,14 @@ function Estructura(){
     return(
 <>
 <Navbar/>
-<Banner1/>
+<div>
+    <Banner1/>
 <div className="total-panels">
     <ContentTotally/>
-    <ContentTotally/>
-    <ContentTotally/>
+    
 </div>
 <Banner2/>
+    </div>
 </>
     );
 }
