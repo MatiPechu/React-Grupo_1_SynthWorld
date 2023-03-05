@@ -1,0 +1,11 @@
+.contenedor {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.texto {
+    font-size: 0.75rem;
+}

@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import Banner1 from "./Banner1";
 import Banner2 from "./Banner2";
 import ContentTotally from "./ContentTotally";
+import Footer from "./Footer";
+
 function Estructura(){
     return(
 <>
@@ -14,6 +16,7 @@ function Estructura(){
     
 </div>
 <Banner2/>
+<Footer/>
     </div>
 </>
     );
