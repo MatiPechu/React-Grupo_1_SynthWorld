@@ -24,6 +24,8 @@
 .buttonsED {
     margin-right: 0;
     justify-self: flex-end;
+    text-align: left;
+
 }
 .buttonsED button{
     background-color: #837e7e;
@@ -33,6 +35,13 @@
     padding: 5px;
     margin-left: 5px;
     margin-bottom: 15px;
+}
+.buttonsLast {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    align-items: first baseline;
+    margin: auto;
 }
 
 a {
