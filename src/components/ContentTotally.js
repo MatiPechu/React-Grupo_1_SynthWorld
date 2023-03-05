@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./CardTotal";
 import { useEffect, useState } from "react";
 function ContentTotally() {
   const [products, setProducts] = useState([]);
