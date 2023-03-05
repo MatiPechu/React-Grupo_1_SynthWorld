@@ -1,0 +1,8 @@
+.lastProduct {
+    display: block;
+    text-align: center;
+}
+.productNamePrice {
+    display: flex;
+    justify-content: space-around;
+}

@@ -3,11 +3,11 @@ import '../assets/css/CardTotal.css'
 
 function Card(props){
     return(
-<div className="content">
+<div className="content totals">
     <h3> Total de {props.name}</h3>
-        <div class='total'>
+        <div className='total'>
             <p>{props.data}</p>
-            <i class={props.icon}></i>
+            <i className={props.icon}></i>
         </div>
 </div>
     )

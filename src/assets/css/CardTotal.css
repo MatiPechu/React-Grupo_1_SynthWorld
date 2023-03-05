@@ -1,8 +1,15 @@
 .content { 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 5px;
 }
+.totals {
+        width: 60%;
+        display: flex ;
+        justify-content: space-between;
+        
+    }
 .total {
     display: flex;
     justify-content: center;

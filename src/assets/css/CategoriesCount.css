@@ -1,0 +1,11 @@
+.cateogriesCount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categoryTotal{
+    width: 60%;
+    display: flex ;
+    justify-content: space-between;
+    
+}
