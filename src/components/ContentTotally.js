@@ -3,6 +3,7 @@ import Card from "./CardTotal";
 import { useEffect, useState } from "react";
 import LastProduct from "./LastProduct";
 import CategoriesCount from "./CategoriesCount";
+import ProductList from "./ProductList";
 function ContentTotally() {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -10,6 +11,7 @@ function ContentTotally() {
   const [lastProduct, setLastProduct] = useState([]);
   const [categoriesCount, setCategoriesCount] = useState([])
   const [categoriesNames, setCategoriesNames] = useState([])
+  const [productList, setProductList] = useState([]);
 
   useEffect(() => {
     Promise.all([
@@ -20,15 +22,13 @@ function ContentTotally() {
         let totCategories;
         totCategories = Object.keys(res[0].countByCategory).length;
         let cats = Object.keys(res[0].countByCategory)
-      //  console.log(res[0].countByCategory[cats[0]])
          let  catsTotal = Object.values(res[0].countByCategory)
-        console.log(cats)
 
         setCategoriesCount(catsTotal)
         setCategoriesNames(cats)
 
 
-        console.log(categoriesCount)
+        
        // console.log(res[1].meta.count);
         //  console.log(resU)
         let resProducts =  res[0].Products
@@ -36,6 +36,8 @@ function ContentTotally() {
         setProducts(res[0].meta.count);
         setCategories(totCategories);
         setUsers(res[1].meta.count);
+        setProductList(res[0].Products);
+        console.log(productList)
       });
     });
   }, []);
@@ -48,6 +50,7 @@ function ContentTotally() {
       </div>
       <LastProduct product={lastProduct}/>
       <CategoriesCount catNames={categoriesNames} catCount={categoriesCount}/> 
+      <ProductList productList={productList}/> 
     </>
   );
 }

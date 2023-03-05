@@ -4,7 +4,7 @@ import "../assets/css/CategoriesCount.css";
 function CategoriesCount(props) {
   return (
     <div className="content cateogriesCount">
-      <h3>Categories</h3>
+      <h3>Productos por categoria</h3>
       {props.catNames.map((category, i) => {
         return (
           <div className="categoryTotal">
