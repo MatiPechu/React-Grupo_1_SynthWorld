@@ -1,13 +1,13 @@
 import React from "react";
+import '../assets/css/Cards.css'
+
 function Card(props){
     return(
 <div className="content">
-    <h3> Cantidad total de "Elemento en cuestion"</h3>
-        <div>
-            <p>
-                Total de {props.Product} 
-            </p>
-            <i>Icono del Elemento</i>
+    <h3> Total de {props.name}</h3>
+        <div class='total'>
+            <p>{props.data}</p>
+            <i class={props.icon}></i>
         </div>
 </div>
     )

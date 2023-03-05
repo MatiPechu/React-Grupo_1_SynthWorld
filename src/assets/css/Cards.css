@@ -1,0 +1,16 @@
+.content { 
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas {
+    margin-left: 20px;
+    font-size: 2rem;
+    
+}
