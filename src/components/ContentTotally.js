@@ -6,7 +6,7 @@ import CategoriesCount from "./CategoriesCount";
 import ProductList from "./ProductList";
 function ContentTotally() {
   const [products, setProducts] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const [categoriesTotal, setCategoriesTotal] = useState([]);
   const [users, setUsers] = useState([]);
   const [lastProduct, setLastProduct] = useState([]);
   const [categoriesCount, setCategoriesCount] = useState([])
@@ -26,18 +26,15 @@ function ContentTotally() {
 
         setCategoriesCount(catsTotal)
         setCategoriesNames(cats)
-
-
-        
        // console.log(res[1].meta.count);
         //  console.log(resU)
         let resProducts =  res[0].Products
         setLastProduct(resProducts[resProducts.length-1])
         setProducts(res[0].meta.count);
-        setCategories(totCategories);
+        setCategoriesTotal(totCategories);
         setUsers(res[1].meta.count);
         setProductList(res[0].Products);
-        console.log(productList)
+        console.log('eee', categoriesCount)
       });
     });
   }, []);
@@ -45,12 +42,12 @@ function ContentTotally() {
     <>
     <div className="content">
       <Card data={products} name="products" icon="fas fa-music"/>
-      <Card data={categories} name="categories" icon="fas fa-list"/>
+      <Card data={categoriesTotal} name="categories" icon="fas fa-list"/>
       <Card data={users} name="users" icon="fas fa-users"/>
       </div>
       <LastProduct product={lastProduct}/>
       <CategoriesCount catNames={categoriesNames} catCount={categoriesCount}/> 
-      <ProductList productList={productList}/> 
+      <ProductList productList={productList} categoriesNames={categoriesNames}/> 
     </>
   );
 }

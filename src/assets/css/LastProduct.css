@@ -6,5 +6,36 @@
     width: 60%;
     display: flex ;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     margin: auto;
+}
+
+.categoriesInList {
+    width: 100%;
+    font-size: 1rem;
+    
+}
+
+.borderBottomTable {
+    border-bottom: 1px white solid;
+}
+
+.buttonsED {
+    margin-right: 0;
+    justify-self: flex-end;
+}
+.buttonsED button{
+    background-color: #837e7e;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff
 }

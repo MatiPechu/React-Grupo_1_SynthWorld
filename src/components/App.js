@@ -1,12 +1,13 @@
 import '../index';
 import React from 'react';
 import Estructura from './Estructura'
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <React.Fragment >
+    <BrowserRouter>
     <Estructura/>
-    </React.Fragment>
+    </BrowserRouter>
   );
 }
 
