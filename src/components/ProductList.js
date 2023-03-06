@@ -23,7 +23,7 @@ function ProductList(props) {
 
         return (
       <div className="productNamePrice borderBottomTable" key={i}>
-        <p key={i+10000}>{product.name}</p>
+        <p className='pNameList' key={i+10000}>{product.name}</p>
         <p key={i+20000}>${product.price}</p>
         <div className="productNamePrice categoriesInList">
         <div className="buttonsED">
