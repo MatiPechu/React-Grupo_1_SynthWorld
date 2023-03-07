@@ -21,3 +21,10 @@
     margin-left: 20px;
     font-size: 2rem;
 }
+
+@media (max-width:768px) {
+    .totals {
+        width: 100%;
+        
+    }
+}

@@ -40,12 +40,29 @@
 .buttonsLast {
     display: flex;
     justify-content: flex-start;
-    width: 60%;
     align-items: first baseline;
-    margin: auto;
 }
 
 a {
     text-decoration: none;
     color: #fff
+}
+
+.lastProductBtnCategories {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+
+}
+
+.lastProductCategories {
+    font-size: 1.1rem;
+}
+
+@media (max-width:768px) {
+    .lastProductBtnCategories, .productNamePrice {
+        width: 100%;
+        
+    }
 }
