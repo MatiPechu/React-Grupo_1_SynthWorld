@@ -45,7 +45,7 @@ function ContentTotally() {
       <Card data={categoriesTotal} name="categories" icon="fas fa-list"/>
       <Card data={users} name="users" icon="fas fa-users"/>
       </div>
-      <LastProduct product={lastProduct} categoriesNames={categoriesNames}/>
+      <LastProduct product={lastProduct} categoriesNames={categoriesNames} brand={lastProduct.brand}/>
       <CategoriesCount catNames={categoriesNames} catCount={categoriesCount}/> 
       <ProductList productList={productList} categoriesNames={categoriesNames}/> 
     </>

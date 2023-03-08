@@ -59,9 +59,25 @@ a {
 .lastProductCategories {
     font-size: 1.1rem;
 }
+.lastProductImg {
+    width: 40%;
+    
+}
+.imgBrandContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.lastImgBrand {
+    width: 60%;
+}
 
 @media (max-width:768px) {
-    .lastProductBtnCategories, .productNamePrice {
+    .lastProductBtnCategories, .productNamePrice, .imgBrandContainer {
         width: 100%;
         
     }
