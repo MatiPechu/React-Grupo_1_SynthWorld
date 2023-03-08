@@ -9,8 +9,9 @@ body {
   font-size: 1.5rem;
   margin: 0%;
   padding: 0%;
-  margin-left: 5px;
-  box-sizing: border-box
+  margin-left: 300px;
+  box-sizing: border-box;
+  padding: 20px;
   
 }
 
