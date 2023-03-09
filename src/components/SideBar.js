@@ -20,7 +20,7 @@ function Sidebar() {
         </li>
         <li className="sidebar-menu-item">
           <FontAwesomeIcon icon={faTags} className="sidebar-menu-icon" />
-          Brands
+          Categories
         </li>
         <li className="sidebar-menu-item">
           <FontAwesomeIcon icon={faCog} className="sidebar-menu-icon" />

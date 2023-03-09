@@ -7,7 +7,7 @@ function ProductList(props) {
     console.log('aaaa', props.categoriesNames)
   return (
     <div className="content lastProduct">
-      <h3>Listado de productos</h3>
+      <h3>Products list</h3>
      { productList.map((product, i) => {
         
         let categories = product.category;
