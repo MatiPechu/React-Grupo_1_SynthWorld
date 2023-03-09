@@ -27,8 +27,8 @@ function ProductList(props) {
         <p key={i+20000}>${product.price}</p>
         <div className="productNamePrice categoriesInList">
         <div className="buttonsED">
-            <button><Link to={{ pathname: `localhost:3031/products/${product.id}`}} target="blank">Detail</Link></button>
-            <button><Link to={{ pathname: `localhost:3031/products/edit/${product.id}`}} target="blank">Edit</Link></button>
+            <button><Link to={{ pathname: `localhost:3031/products/${product.id}`}} target="_blank">Detail</Link></button>
+            <button><Link to={{ pathname: `localhost:3031/products/edit/${product.id}`}} target="_blank">Edit</Link></button>
             
             <form action={`/products/delete/${product.id}/?_method=DELETE`} method="POST" style={{display: 'inline-block'}}>
             <button type="submit" className="btn-delete-product" style={{display: 'inline-flex'}}>

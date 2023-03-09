@@ -36,8 +36,8 @@ function LastProduct(props){
         </div>
         <div className="lastProductBtnCategories">
         <div className="buttonsED buttonsLast">
-            <button><Link to={{ pathname: `localhost:3031/products/${props.product.id}`}} target="blank">Detail</Link></button>
-            <button><Link to={{ pathname: `localhost:3031/products/edit/${props.product.id}`}} target="blank">Edit</Link></button> 
+            <button><Link target="_blank" to={{ pathname: `localhost:3031/products/${props.product.id}` }}>Detail</Link></button>
+            <button><Link to={{ pathname: `localhost:3031/products/edit/${props.product.id}`}} target="_blank">Edit</Link></button> 
             <form action={`/products/delete/${props.product.id}/?_method=DELETE`} method="POST" style={{display: 'inline-block'}}>
             <button type="submit" className="btn-delete-product" style={{display: 'inline-flex'}}>
                 Delete
